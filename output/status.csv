@@ -1,0 +1,16 @@
+﻿ID;Nazwa systemu;Kategoria AI Act;Istotność;Liczba braków;Kompletny
+AI-001;Wykrywanie oszustw kartowych;Minimalne ryzyko;Wysoka;0;Tak
+AI-002;Monitoring transakcji AML;Minimalne ryzyko;Wysoka;0;Tak
+AI-003;Scoring kredytowy osób fizycznych;Wysokie ryzyko;Wysoka;1;Nie
+AI-004;Scoring kredytowy firm;Minimalne ryzyko;Wysoka;0;Tak
+AI-005;Ocena ryzyka w ubezpieczeniu na życie;Wysokie ryzyko;Wysoka;0;Tak
+AI-006;Personalizacja ofert;Minimalne ryzyko;Średnia;0;Tak
+AI-007;Chatbot dla klientów;Przejrzystość (art. 50);Średnia;1;Nie
+AI-008;Voicebot infolinii;Przejrzystość (art. 50);Średnia;0;Tak
+AI-009;Wirtualny doradca w aplikacji;Przejrzystość (art. 50);Średnia;0;Tak
+AI-010;Asystent LLM dla pracowników;Minimalne ryzyko;Średnia;0;Tak
+AI-011;OCR dokumentów;Minimalne ryzyko;Niska;1;Nie
+AI-012;Prognoza płynności;Minimalne ryzyko;Niska;0;Tak
+AI-013;Klasyfikacja reklamacji;Minimalne ryzyko;Średnia;0;Tak
+AI-014;Asystent selekcji CV;Wysokie ryzyko;Wysoka;1;Nie
+AI-015;Wykrywanie anomalii w logach IT;Minimalne ryzyko;Średnia;0;Tak

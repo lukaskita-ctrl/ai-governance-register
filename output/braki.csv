@@ -1,0 +1,5 @@
+﻿ID;System;Właściciel;Reguła;Poziom;Opis
+AI-003;Scoring kredytowy osób fizycznych;Katarzyna Zielińska;K4;KRYTYCZNE;wymagana FRIA nie wykonana (status: Brak)
+AI-007;Chatbot dla klientów;Agnieszka Kowalczyk;K3;UWAGA;przegląd po terminie (15.11.2026)
+AI-011;OCR dokumentów;Barbara Woźniak;K3;UWAGA;przegląd po terminie (01.10.2026)
+AI-014;Asystent selekcji CV;;K1;UWAGA;brak właściciela biznesowego
