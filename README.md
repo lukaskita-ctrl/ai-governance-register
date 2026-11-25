@@ -25,6 +25,13 @@ Triage questionnaire → classification → AI register → completeness checks 
 | Rules | Classification steps, materiality scoring, review frequency and control rules K1–K7, all editable in one sheet | Excel |
 | Checks | Runs every system through rules K1–K7 and writes a findings report | Python (pandas) |
 | Dashboard | Portfolio by risk category, completeness rate, overdue reviews, list of findings, filter by materiality | Power BI |
+| Process | Triage and approval flow across four roles, from a new system or periodic review to the register | BPMN 2.0 |
+
+### Process (BPMN)
+
+![Triage process](docs/proces_triage.png)
+
+The business owner fills in the triage questionnaire, either for a new system or a material change, or when a periodic review is due. The AI governance team checks it, rules out non-AI systems and escalates prohibited practices to Compliance. High-risk systems go through validation, FRIA and DPIA, and the AI committee decides on approval. Every approved system lands in the register, where the automated checks K1–K7 run. The editable source is `docs/proces_triage.bpmn` (opens in Camunda Modeler or [demo.bpmn.io](https://demo.bpmn.io)).
 
 ### Classification logic (simplified)
 
@@ -59,7 +66,8 @@ data/       Rejestr_systemow_AI_Bank_Przykladowy.xlsx   register, triage and rul
 scripts/    kontrola_rejestru.py                         completeness checks
 output/     braki.csv, status.csv                        latest check results
 dashboard/  Rejestr_AI_dashboard.pbix, .pdf              Power BI report
-docs/       dashboard.png                                screenshot
+docs/       dashboard.png                                dashboard screenshot
+            proces_triage.bpmn, proces_triage.png        triage process (BPMN 2.0)
 ```
 
 ## Run it
@@ -75,7 +83,6 @@ Try it: set the FRIA status of AI-003 to "Wykonana" in the Excel file, run the s
 
 ## What I would add next
 
-- Process diagram of the triage and review cycle (BPMN)
 - Reconciliation with other inventories (IT applications, vendor contracts under DORA) to catch unregistered "shadow AI"
 - Separate triage paths for generative AI and AI agents
 
